@@ -1,0 +1,26 @@
+id: softcast_tagged_decoder
+label: tagged_decoder
+category: '[softcast]'
+
+templates:
+  imports: import softcast
+  make: softcast.tagged_decoder(${length_name})
+
+
+parameters:
+- id: length_name
+  label: Length_name
+  dtype: string
+
+
+inputs:
+- label: in
+  domain: stream
+  dtype: complex
+
+outputs:
+- label: out
+  domain: stream
+  dtype: byte
+
+file_format: 1

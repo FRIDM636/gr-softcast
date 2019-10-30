@@ -1,0 +1,15 @@
+id: softcast_decoder
+label: Decoder
+category: '[SOFTCAST]'
+templates:
+  imports: import softcast
+  make: softcast.decoder()
+inputs:
+- label: in
+  domain: stream
+  dtype: complex
+outputs:
+- label: out
+  domain: stream
+  dtype: byte
+file_format: 1

@@ -1,0 +1,19 @@
+id: softcast_general_shaper
+label: General shaper
+category: '[SOFTCAST]'
+templates:
+  imports: import softcast
+  make: softcast.general_shaper($threshold)
+parameters:
+- id: threshold
+  label: Threshold
+  dtype: float
+inputs:
+- label: in
+  domain: stream
+  dtype: complex
+outputs:
+- label: out
+  domain: stream
+  dtype: complex
+file_format: 1

@@ -1,0 +1,15 @@
+id: softcast_short_decoder
+label: Short decoder
+category: '[SOFTCAST]'
+templates:
+  imports: import softcast
+  make: softcast.short_decoder()
+inputs:
+- label: in
+  domain: stream
+  dtype: complex
+outputs:
+- label: out
+  domain: stream
+  dtype: raw
+file_format: 1

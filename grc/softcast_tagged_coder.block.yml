@@ -1,0 +1,19 @@
+id: softcast_tagged_coder
+label: Tagged coder
+category: '[SOFTCAST]'
+templates:
+  imports: import softcast
+  make: softcast.tagged_coder(${length_name})
+parameters:
+- id: length_name
+  label: Length_name
+  dtype: string
+inputs:
+- label: in
+  domain: stream
+  dtype: byte
+outputs:
+- label: out
+  domain: stream
+  dtype: complex
+file_format: 1

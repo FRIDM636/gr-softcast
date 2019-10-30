@@ -1,0 +1,15 @@
+id: softcast_test_decode
+label: Test decode
+category: '[SOFTCAST]'
+templates:
+  imports: import softcast
+  make: softcast.test_decode()
+inputs:
+- label: in
+  domain: stream
+  dtype: complex
+outputs:
+- label: out
+  domain: stream
+  dtype: byte
+file_format: 1
