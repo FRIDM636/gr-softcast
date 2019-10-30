@@ -1,11 +1,5 @@
-This is the softcast-write-a-block package meant as a guide to building
-out-of-tree packages. To use the softcast blocks, the Python namespaces
-is in 'softcast', which is imported as:
+This is the softcast-write-a-block package, implement the modulation type presented in the paper:
 
-    import softcast
+* [Softcast] (https://people.csail.mit.edu/szym/softcast/tr2.pdf) a paper describe this work
 
-See the Doxygen documentation for details about the blocks available
-in this package. A quick listing of the details can be found in Python
-after importing by using:
 
-    help(softcast)
